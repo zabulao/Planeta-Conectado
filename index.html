@@ -1,21 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planeta conectados</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="darkmode.js" defer></script>
+    
 </head>
 <body>
-<nav>
+  
+  <header>
+    <nav>
   <a href="index.html">Início</a>
     <a href="#">Notícias</a>
   <a href="forum.html">Fórum</a>
   <a href="#">Sobre nós</a>
   <a href="#">Login</a>
-</nav>
+  </nav>
+  <div>
+    <input type="checkbox" name="change-theme" id="change-theme">
+    <label for="change-theme">
+     <i class="bi bi-sun"></i>
+     <i class="bi bi-moon"></i>
+    </label>
+  </div>
+  </header>
 
-<section id="inicio">
+ <section id="inicio">
     <h1>Planeta Conectados</h1>
     <h2>Transformando Tecnologia em Sustentabilidade</h2>
     <p>
@@ -29,13 +42,13 @@
     <h2>O que é TI Verde?</h2>
     <p>
       TI Verde é um conjunto de práticas e políticas que têm como objetivo minimizar os danos 
-      ao meio ambiente no ciclo de vida dos recursos de TI — desde a produção até o descarte.
+      ao meio ambiente no ciclo de vida dos recursos de TI desde a produção até o descarte.
       Envolve o uso consciente de energia, materiais e equipamentos tecnológicos..
     </p>
   </div>
 
   <div class="image-box" id="image">
-    <img src="img/fundo-de-techno-digital-com-linhas-e-pontos-de-conexao.jpg" alt="Imagem interativa">
+    <img src="img/Planeta-conectados.jpg" alt="Imagem do site">
   </div>
  
   </div>
@@ -66,5 +79,7 @@
     <p>SOCIEDADE UNIFICADA DE ENSINO AUGUSTO MOTTA</p>
     <p>https://www.unisuam.edu.br/</p>
   </footer>
+  
+  </section>
 </body>
 </html>

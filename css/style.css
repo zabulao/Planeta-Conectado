@@ -6,61 +6,39 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background: linear-gradient(135deg, #0a0f14, #0f2027);
-  color: #e0e0e0;
+  background: linear-gradient(135deg, #b6e6bd);
+  color: #000000;
   line-height: 1.6;
 }
 
-nav {
+header {
   display: flex;
-  justify-content: center;
-  background: rgba(20,30,40,0.95);
+  justify-content: space-between;
+  align-items: center;
+  background: #4dad51;
   padding: 15px 30px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 10;
 }
+input[type= "checkbox"]{
+  display:none;
+}
+.bi {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
 
-nav a {
-  color: #e0e0e0;
+.bi-moon {
+  display: none;
+}
+
+header   a {
+  color: #000000;
   text-decoration: none;
   margin: 0 15px;
   font-weight: 600;
   transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #3ee577;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background: #16222a;
-  min-width: 200px;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 12px 16px;
-  color: #e0e0e0;
-  transition: background 0.3s;
-}
-
-.dropdown-content a:hover {
-  background: #1b2c38;
-  color: #3ee577;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 section#inicio {
@@ -71,21 +49,19 @@ section#inicio {
 }
 
 section#inicio h1 {
-  color: #3ee577;
-  margin-bottom: 15px;
-  letter-spacing: 1px;
-  text-shadow: 0 0 6px #3ee577;
+  color: #2e7d32;
+  font-family: Playfair Display;
+  font-size: 80px;
 }
 
 section#inicio h2 {
-  color: #3ee577;
+  color: #000000;
   margin-bottom: 15px;
   letter-spacing: 1px;
-  text-shadow: 0 0 6px #3ee577;
 }
 
 section#inicio p {
-  color: #c7c7c7;
+  color: #000000;
   font-size: 1.1rem;
 }
 
@@ -102,18 +78,12 @@ section#inicio p {
   flex: 1;
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
-#info-right {
-  opacity: 0;
-  transform: translateX(50px);
-  pointer-events: none;
-}
+ 
 
 .image-box {
   width: 380px;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
   position: relative;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -125,45 +95,6 @@ section#inicio p {
   border-radius: 12px;
 }
 
-.image-box:hover {
-  transform: scale(1.02);
-}
-
-.image-box:hover ~ #info-left {
-  opacity: 0;
-  transform: translateX(-50px);
-  pointer-events: none;
-}
-
-.image-box:hover ~ #info-right {
-  opacity: 1;
-  transform: translateX(0);
-  pointer-events: auto;
-}
-
-#info-right {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 380px;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  border-radius: 12px;
-  text-align: left;
-  color: #3ee577;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
-}
-
-#info-right h2 {
-  margin-bottom: 10px;
-  text-shadow: 0 0 6px #3ee577;
-}
-
-#info-right p {
-  font-size: 0.95rem;
-  color: #c7c7c7;
-}
-
 section:not(#inicio) {
   max-width: 800px;
   margin: 60px auto;
@@ -171,35 +102,60 @@ section:not(#inicio) {
 }
 
 section h2 {
-  color: #3ee577;
+  color: #000000;
   margin-bottom: 10px;
-  text-shadow: 0 0 6px #3ee577;
 }
 
 section p {
-  color: #c7c7c7;
+  color: #000000;
   font-size: 1rem;
 }
 
 footer {
-  background: #0a0f14;
+  background: #4dad51;
   text-align: center;
-  padding: 30px 20px;
+  padding: 60 px 20px;
   font-size: 0.9rem;
-  color: #888;
-  border-top: 1px solid #1f2a32;
+  color: #000000;
 }
 
 footer strong {
-  color: #3ee577;
-  text-shadow: 0 0 4px #3ee577;
+  color: #000000;
 }
 
-footer a {
-  color: #3ee577;
-  text-decoration: none;
+/* Dark theme */
+.dark,
+.dark header {
+  background-color: #263238;
+  color: #fff;
 }
 
-footer a:hover {
-  text-decoration: underline;
+.dark .bi-sun {
+  display: none;
 }
+
+.dark .bi-moon {
+  display: block;
+}
+
+.dark .card {
+  background-color: #37474f;
+}
+
+.dark .card-image {
+  background-color: #273035;
+}
+
+.dark .subtitle {
+  color: #67b4f3;
+}
+
+.dark .description {
+  color: #2196f3;
+}
+
+.dark .btn {
+  background-color: #67b4f3;
+}
+
+
