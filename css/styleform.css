@@ -48,6 +48,25 @@ header{
     margin-bottom: 12px;
 }
 
+.senha-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.senha-container input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.senha-container i {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #555;
+}
+
 input {
     padding: 10px;
     margin-bottom: 12px;
@@ -68,6 +87,22 @@ button {
 
 button:hover {
     background: #2438ff;
+}
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #02b60b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;      
+    margin: 0 auto;      
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 footer {

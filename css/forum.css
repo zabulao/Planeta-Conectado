@@ -17,11 +17,6 @@ nav{
   padding: 1rem;
 }
 
-.forum-container {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem;
-}
 
 .new-post {
   background: #017729;
@@ -70,18 +65,67 @@ nav{
 .posts li strong {
   color: #010101;
 }
-footer {
-  background:#017729;
-  text-align: center; 
-  padding: 15px 5px;    
-  font-size: 0.9rem;
-  color: #ffffff;
-  box-shadow: 0.5px 0.5px 10px 0.5px #000;
+
+.news-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
 }
-footer strong {
-  color: #ffffff;
-  text-shadow: 0 0 6px #02b60b;
+
+.news-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0002;
+    padding: 15px;
+    transition: 0.3s;
 }
+
+.news-card:hover {
+    transform: translateY(-4px);
+}
+
+.news-card img {
+    width: 20%;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    float: left;
+}
+
+.news-card h2 {
+    color: #0a2a73;
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    padding: 5px 0 0 30px;
+    
+}
+
+.news-card p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #333;
+    display: flex;
+    padding: 5px 0 0 30px;
+}
+
+.news-card a {
+    display: inline-block;
+    background: #017729;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+  
+}
+
+.news-card a:hover {
+    background: #015c24;
+}
+
+
 
 /* Dark theme */
 .dark,

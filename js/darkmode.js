@@ -26,6 +26,3 @@ changeThemeBtn.addEventListener("change", function () {
   }
 });
 
-document.getElementById("btnMensagem").onclick = function() {
-    alert("Obrigado por visitar nosso site, as tartarugas agradecem!!!");
-}

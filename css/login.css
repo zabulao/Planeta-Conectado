@@ -1,0 +1,141 @@
+
+
+.login-container {
+    max-width: 450px;
+    margin: 80px auto;
+    background: #ffffff;
+    padding: 35px 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 12px #0003;
+    text-align: center;
+    animation: fadeIn 0.6s ease;
+}
+
+.login-container h2 {
+    color: #017729;
+    text-shadow: 0 0 6px #02b60b55;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-container label {
+    text-align: left;
+    font-weight: bold;
+    color: #014b1e;
+    margin-left: 3px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #93d7a0;
+    border-radius: 10px;
+    background: #f8fff9;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.login-container input:focus {
+    border-color: #02b60b;
+    box-shadow: 0 0 6px #02b60b66;
+}
+
+.password-box {
+    position: relative;
+}
+
+.password-box i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 22px;
+    color: #017729;
+}
+
+.login-container button {
+    background: #017729;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.login-container button:hover {
+    background: #015c24;
+}
+
+.cadastro {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #014b1e;
+}
+
+.cadastro a {
+    color: #017729;
+    font-weight: bold;
+}
+
+.cadastro a:hover {
+    text-decoration: underline;
+}
+
+.dark .login-container {
+    background: #1e272c;
+    box-shadow: 0 0 10px #000;
+}
+
+.dark .login-container h2 {
+    color: #3ee577;
+    text-shadow: 0 0 6px #3ee577;
+}
+
+.dark .login-container label {
+    color: #d6ffd8;
+}
+
+.dark .login-container input {
+    background: #2c373d;
+    border-color: #3ee57755;
+    color: #fff;
+}
+
+.dark .login-container input:focus {
+    border-color: #3ee577;
+}
+
+.dark .password-box i {
+    color: #3ee577;
+}
+
+.dark .login-container button {
+    background: #3ee577;
+    color: #000;
+}
+
+.dark .login-container button:hover {
+    background: #2ecc71;
+}
+
+.dark .cadastro {
+    color: #d8ffd9;
+}
+
+.dark .cadastro a {
+    color: #3ee577;
+}
+
+
+
