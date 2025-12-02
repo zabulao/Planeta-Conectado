@@ -1,0 +1,241 @@
+
+header{
+ background:#017729;
+ color: #000;
+ text-align: center;
+ padding: 15px 30px;
+ box-shadow: 0.5px 0.5px 10px 0.5px #000;
+}
+
+nav{
+    padding-top: 10px;
+}
+
+.forum-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+
+.new-post {
+  background: #017729;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.new-post input,
+.new-post textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.new-post button {
+  background: #6ccb70;
+  color: rgb(12, 12, 12);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.new-post button:hover {
+  background:#017729;
+}
+
+.posts ul {
+  list-style: none;
+}
+
+.posts li {
+  background: #f1f8e9;
+  border: 1px solid #c5e1a5;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 4px #ccc;
+}
+
+.posts li strong {
+  color: #010101;
+}
+
+.news-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+.news-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0002;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-4px);
+}
+
+.news-card img {
+    width: 20%;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    float: left;
+}
+
+.news-card h2 {
+    color: #0a2a73;
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    padding: 5px 0 0 30px;
+    
+}
+
+.news-card p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #333;
+    display: flex;
+    padding: 5px 0 0 30px;
+}
+
+.news-card a {
+    display: inline-block;
+    background: #017729;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+  
+}
+
+.news-card a:hover {
+    background: #015c24;
+}
+
+
+
+/* Dark theme */
+.dark,
+.dark .new-post button{
+   color: #fff;
+   box-shadow: #3ee577 ;
+}
+.dark .new-post {
+  box-shadow: 0.5px 0.5px 10px 0.5px #000;
+}
+.dark section h2{
+  color: #3ee577;
+  text-shadow: 0 0 6px #3ee577;
+}
+.dark .banner .banner-text h1{
+    color: #aecfae;
+    text-shadow: 0 0 6px  #02b60b;
+}
+.dark nav .logo{
+    color:#95d996;
+    text-shadow: 0 0 6px  #02b60b;
+}
+.dark nav ul a{
+    color: #95d996;
+}
+.dark .btn{
+    color: #95d996;
+}
+.dark .posts li{
+    color: #000;
+
+  }
+/* TABLET */
+@media (max-width: 991px) {
+
+  header {
+    padding: 12px 20px;
+  }
+
+  .forum-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .new-post {
+    padding: 1rem;
+  }
+
+  .posts li {
+    padding: 0.9rem;
+  }
+}
+
+/* Celulare */
+@media (max-width: 768px) {
+
+  header {
+    font-size: 0.9rem;
+  }
+
+  .forum-container {
+    max-width: 95%;
+  }
+
+  .new-post button {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+  }
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+
+  header {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .new-post input,
+  .new-post textarea {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+
+  .posts li {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+
+  .forum-container {
+    padding: 0.5rem;
+  }
+
+  .new-post textarea {
+    height: 120px;
+  }
+
+  .new-post button {
+    font-size: 0.9rem;
+  }
+
+  header {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+}

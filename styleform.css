@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: "Inter", sans-serif;
+}   
+
+body{
+    background: #eef3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+ background:#017729;
+ color: #000;
+ text-align: center;
+ padding: 15px 30px;
+ width: 100%;
+ box-shadow: 0.5px 0.5px 10px 0.5px #000;
+}
+
+.form-container{
+    width: 400px; 
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px #0000003a;
+    margin: 20px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.genero-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.senha-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.senha-container input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.senha-container i {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #91a3ff;
+    border-radius: 6px;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background: #02b60b;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2438ff;
+}
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #02b60b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;      
+    margin: 0 auto;      
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+  background:rgb(1, 119, 41);
+  text-align: center; 
+  padding: 10px 5px;    
+  font-size: 0.9rem;
+  color: #ffffff;
+  box-shadow: 0.5px 0.5px 10px 0.5px #000;
+  width: 100%;
+}
+.dark header {
+  background-color: #263238;
+  color: #fff;
+}
+.dark .form-container h2{
+ color: #3ee577;
+  text-shadow: 0 0 6px #3ee577
+}
+.dark .form-container label{
+     color: #0d3b0e;
+    text-shadow: 0 0 6px  #02b60b; 
+}
+
+.dark section h2{
+  color: #3ee577;
+  text-shadow: 0 0 6px #3ee577;
+}
+.dark nav .logo{
+    color:#95d996;
+    text-shadow: 0 0 6px  #02b60b;
+}
+.dark nav ul a{
+    color: #95d996;
+}
+.dark .btn{
+    color: #95d996;
+}
+.dark .posts li{
+    color: #000;
+}

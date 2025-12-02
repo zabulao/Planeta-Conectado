@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fórum TI Verde</title>
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/forum.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Planeta Conectados</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forum.css">
 </head>
 <body>
-   <header>
+     <header>
         <div class="container">
             <nav>
                 <a class="logo" href="index.html">&#x1F30E PlanetaConectado</a>
@@ -32,19 +34,26 @@
             </nav>
   </header>
 
-  <main class="forum-container">
-    <section class="new-post">
-      <h2>Nova postagem</h2>
-      <input type="text" id="username" placeholder="Seu nome">
-      <textarea id="message" rows="4" placeholder="Escreva sua mensagem..."></textarea>
-      <button id="postBtn">Publicar</button>
-    </section>
+    <div class="login-container">
+        <h2>Entrar</h2>
 
-    <section class="posts">
-      <h2>Postagens recentes</h2>
-      <ul id="postList"></ul>
-    </section>
-  </main>
+        <form id="loginForm">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail">
+
+            <label for="senha">Senha:</label>
+            <div class="password-box">
+                <input type="password" id="senha" placeholder="Digite sua senha">
+                <i class="bi bi-eye" id="togglePassword"></i>
+            </div>
+
+            <button type="submit">Login</button>
+
+            <p class="cadastro">
+                Não tem conta? <a href="cadastro.html">Cadastrar-se</a>
+            </p>
+        </form>
+    </div>
 
 <footer id="contato">
     <p><strong>Planeta Conectados</strong> - Av. Paris, 84 - Bonsucesso, Rio de Janeiro - RJ, 21041-020</p>
@@ -52,8 +61,7 @@
     <p><a href="https://www.unisuam.edu.br/" target="_blank">www.unisuam.edu.br</a></p>
   </footer>
 
-  <script src="js/forum.js"></script>
-  <script src="js/darkmode.js"></script>
-
+    <script src="js/login.js"></script>
+    <script src="js/darkmode.js"></script>
 </body>
 </html>
